@@ -24,3 +24,17 @@ export const CreateAction = async ({request}) => {
 
     return redirect("/")
 }
+
+export const UpdateAction = async ({request, params}) => {
+    const updatedRecipe = await generateRecipeObject(request)
+
+    await fetch(url + params.id + "/", {
+        method: "put",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(updatedRecipe)
+    })
+
+    return redirect("/")
+}
