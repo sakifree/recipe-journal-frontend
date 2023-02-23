@@ -1,5 +1,5 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
-import { CreateAction, UpdateAction } from "./actions";
+import { CreateAction, DeleteAction, UpdateAction } from "./actions";
 import App from "./App"
 import { IndexLoader, ShowLoader } from "./loaders";
 import Create from "./pages/Create";
@@ -13,7 +13,7 @@ const router = createBrowserRouter(
             <Route path="post/:id" element={<Show/>} loader={ShowLoader}/>
             <Route path="create" element={<Create/>} action={CreateAction}/>
             <Route path="update/:id" action={UpdateAction}/>
-            <Route path="delete/:id"/>
+            <Route path="delete/:id" action={DeleteAction}/>
         </Route>
     )
 )

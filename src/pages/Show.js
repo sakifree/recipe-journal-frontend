@@ -19,6 +19,9 @@ const Show = (props) => {
                 <input type="text" name="directions" placeholder="directions" defaultValue={recipe.directions}/>
                 <button>Update Recipe</button>
                 </Form>
+                <Form action={`/delete/${recipe.id}`} method="post">
+                    <button>Delete Recipe</button>
+                </Form>
             </div>
 
             <Link to="/">

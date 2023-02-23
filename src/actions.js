@@ -38,3 +38,11 @@ export const UpdateAction = async ({request, params}) => {
 
     return redirect("/")
 }
+
+export const DeleteAction = async ({params}) => {
+    await fetch(url + params.id + "/", {
+        method: "delete"
+    })
+
+    return redirect("/")
+}
