@@ -8,3 +8,12 @@ export const IndexLoader = async () => {
 
     return data
 }
+
+export const ShowLoader = async ({params}) => {
+    const response = await fetch(url + params.id + "/")
+    const data = await response.json()
+
+    console.log("SHOW LOADER:", data)
+
+    return data
+}
