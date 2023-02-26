@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 
 const Post = (props) => {
     const post = props.post
-
-    return (
+    //console.log(post)
+    
+    return <div>
         <Link to={`/post/${post.id}`}>
-            <h2>{post.name}</h2>
+            <h1>{post.name}</h1>
         </Link>
-    )
-}
-
-export default Post
+    </div>
+  }
+  
+  export default Post;

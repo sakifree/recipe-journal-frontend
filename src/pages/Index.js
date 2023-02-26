@@ -1,21 +1,12 @@
-import { useLoaderData, Link } from "react-router-dom"
+import { useLoaderData } from "react-router-dom";
+import Post from "../components/Post";
 
 const Index = (props) => {
     const recipes = useLoaderData()
     
     return <>
-        <div>
-            <div>
-                {recipes.map(recipe => (
-                    <div key={recipe.id}>
-                        <Link to={`/post/${recipe.id}`}>
-                            <h2>{recipe.name}</h2>
-                        </Link>
-                    </div>
-                ))}
-            </div>
-        </div>
+        {recipes.map((post) => <Post key={post.id} post={post} />)}
     </>
-}
-
-export default Index
+  }
+  
+  export default Index;
