@@ -3,7 +3,7 @@ import { Form } from "react-router-dom"
 
 const Create = (props) => {
     return (
-        <div>
+        <div className="create-form">
             <h2>Add A Recipe</h2>
             <Form action="/create" method="post">
                 <input type="text" name="name" placeholder="name"/>

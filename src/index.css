@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+* {
+  font-family: 'Khand', sans-serif;
+}
+
 html {
   background-color: darkcyan;
 }
