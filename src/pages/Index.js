@@ -8,7 +8,9 @@ const Index = (props) => {
     
     return <>
         <SearchBar data={recipes}/>
-        {recipes.map((post) => <Post key={post.id} post={post} />)}
+        <div className="recipes">
+        {/* {recipes.map((post) => <Post key={post.id} post={post} />)} */}
+        </div>
     </>
   }
   
