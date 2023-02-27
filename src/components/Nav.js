@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import SearchBar from "./SearchBar"
 
 const Nav = (props) => {
     return (
@@ -11,7 +10,6 @@ const Nav = (props) => {
                 <span>New</span>
             </Link>
 
-            <SearchBar/>
         </div>
     )
 }

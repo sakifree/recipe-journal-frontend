@@ -1,23 +1,18 @@
 import { useState } from "react"
 
-const SearchBar = (props) => {
-    const [formData, setFormData] = useState({searchTerm: ""})
+const SearchBar = ({data}) => {
+    const [search, setSearch] = useState("")
 
-    const handleChange = (event) => {
-        setFormData({...formData, [event.target.name]: event.target.value})
-    }
-
-    const handleSubmit = (event) => {
-        event.preventDefault()
-        props.recipeSearch(formData.searchTerm)
-    }
-
+     console.log(data.filter((recipe) => recipe.name.toLowerCase().includes("e")))
+    
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input type="text" name="searchTerm" value={formData.searchTerm} onChange={handleChange}/>
-                <input type="submit" value="Submit"/>
-            </form>
+        <div className="searchBar">
+            <input type="text" placeholder="Search.." className="search" onChange={event => setSearch(event.target.value)}/>
+                <ul className="search-list">
+                    {data.filter(recipe => recipe.name.toLowerCase().includes(search)).map((recipe) => (
+                        <li key={recipe.id} className="list-item">{recipe.name}</li>
+                    ))}
+                </ul>
         </div>
     )
 }
