@@ -1,9 +1,10 @@
+import React from "react"
 import { useState } from "react"
 
 const SearchBar = ({data}) => {
     const [search, setSearch] = useState("")
 
-     console.log(data.filter((recipe) => recipe.name.toLowerCase().includes("e")))
+     console.log(data.filter((recipe) => recipe.name.toLowerCase().includes("search")))
     
     return (
         <div className="searchBar">

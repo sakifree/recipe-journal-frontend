@@ -1,3 +1,4 @@
+import React from "react"
 import { Form } from "react-router-dom"
 
 const Create = (props) => {
@@ -6,8 +7,8 @@ const Create = (props) => {
             <h2>Add A Recipe</h2>
             <Form action="/create" method="post">
                 <input type="text" name="name" placeholder="name"/>
-                <input type="text" name="ingredients" placeholder="ingredients"/>
-                <input type="text" name="directions" placeholder="directions"/>
+                <textarea rows="5" columns="33" name="ingredients" placeholder="ingredients"/>
+                <textarea rows="5" columns="33" name="directions" placeholder="directions"/>
                 <button>Create New Recipe</button>
             </Form>
         </div>

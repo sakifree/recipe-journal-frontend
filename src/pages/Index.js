@@ -1,3 +1,4 @@
+import React from "react";
 import { useLoaderData } from "react-router-dom";
 import Post from "../components/Post";
 import SearchBar from "../components/SearchBar";
