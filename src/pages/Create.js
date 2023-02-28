@@ -15,7 +15,7 @@ const Create = (props) => {
                     <br/>
                     <legend>Directions</legend>
                     <textarea rows="5" columns="33" name="directions" placeholder="directions" className="input-group input-group-sm"/>
-                    <button className="btn btn-dark">Create New Recipe</button>
+                    <button className="btn btn-success">Create New Recipe</button>
                 </div>
             </Form>
         </div>

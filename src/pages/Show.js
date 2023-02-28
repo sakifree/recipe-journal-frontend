@@ -15,19 +15,16 @@ const Show = (props) => {
             <div>
                 <h2>Update this Recipe</h2>
                 <Form action={`/update/${recipe.id}`} method="post">
-                <input type="text" name="name" placeholder="name" defaultValue={recipe.name}/>
-                <input type="text" name="ingredients" placeholder="ingredients" defaultValue={recipe.ingredients}/>
-                <input type="text" name="directions" placeholder="directions" defaultValue={recipe.directions}/>
-                <button>Update Recipe</button>
+                <input type="text" name="name" placeholder="name" defaultValue={recipe.name} className="input-group input-group-sm"/>
+                <textarea rows="5" columns="33" name="ingredients" placeholder="ingredients" defaultValue={recipe.ingredients} className="input-group input-group-sm"/>
+                <textarea rows="5" columns="33" name="directions" placeholder="directions" defaultValue={recipe.directions} className="input-group input-group-sm"/>
+                <button className="btn btn-warning">Update Recipe</button>
                 </Form>
+                <br/>
                 <Form action={`/delete/${recipe.id}`} method="post">
-                    <button>Delete Recipe</button>
+                    <button className="delete-button btn btn-danger">Delete Recipe</button>
                 </Form>
             </div>
-
-            <Link to="/">
-                <button>Go Back</button>
-            </Link>
         </div>
     )
 }
