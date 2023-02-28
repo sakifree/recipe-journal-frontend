@@ -33,8 +33,9 @@ html {
 
 .search-list {
   padding: 0px;
+  margin-left: 10px;
   list-style: none;
-  text-align: center;
+  text-align: left;
 }
 
 .list-item {
