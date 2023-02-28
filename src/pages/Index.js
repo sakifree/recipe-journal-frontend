@@ -16,7 +16,7 @@ const Index = (props) => {
                 <input type="text" placeholder="Search.." className="search" onChange={event => setSearch(event.target.value)}/>
                 <ul className="search-list">
                     {recipes.filter(recipe => recipe.name.toLowerCase().includes(search)).map((recipe) => (
-                    <Link to={`/post/${recipe.id}`}>
+                    <Link className="index-list" to={`/post/${recipe.id}`}>
                         <li key={recipe.id} className="list-item">{recipe.name}</li>
                     </Link>
                     ))}

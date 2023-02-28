@@ -6,7 +6,7 @@ const Show = (props) => {
 
     return (
         <div>
-            <h1 className="show-title">{recipe.name}</h1>
+            <h1 className="show-title"><b>{recipe.name}</b></h1>
             <h3>Ingredients</h3>
             <p>{recipe.ingredients}</p>
             <h3>Directions</h3>

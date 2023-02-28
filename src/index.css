@@ -43,3 +43,16 @@ code {
 .show-title {
   text-align: center;
 }
+
+.create-form {
+  margin-top: 10px;
+}
+
+.index-list {
+  text-decoration: none;
+  color: black;
+}
+
+.index-list:hover {
+  color: teal;
+}
