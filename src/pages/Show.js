@@ -7,10 +7,10 @@ const Show = (props) => {
     return (
         <div>
             <h1 className="show-title"><b>{recipe.name}</b></h1>
-            <h3>Ingredients</h3>
-            <p>{recipe.ingredients}</p>
-            <h3>Directions</h3>
-            <p>{recipe.directions}</p>
+            <h2>Ingredients</h2>
+            <h4>{recipe.ingredients}</h4>
+            <h2>Directions</h2>
+            <h4>{recipe.directions}</h4>
 
             <div>
                 <h2>Update this Recipe</h2>
