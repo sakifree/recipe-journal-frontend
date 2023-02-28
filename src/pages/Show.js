@@ -1,5 +1,5 @@
 import React from "react"
-import { Form, Link, useLoaderData } from "react-router-dom"
+import { Form, useLoaderData } from "react-router-dom"
 
 const Show = (props) => {
     const recipe = useLoaderData()
