@@ -6,10 +6,17 @@ const Create = (props) => {
         <div className="create-form">
             <h2>Add A Recipe</h2>
             <Form action="/create" method="post">
-                <input type="text" name="name" placeholder="name"/>
-                <textarea rows="5" columns="33" name="ingredients" placeholder="ingredients"/>
-                <textarea rows="5" columns="33" name="directions" placeholder="directions"/>
-                <button>Create New Recipe</button>
+                <div className="create-form-container">
+                    <legend>Name</legend>
+                    <input type="text" name="name" placeholder="name" className="input-group input-group-sm"/>
+                    <br/>
+                    <legend>Ingredients</legend>
+                    <textarea rows="5" columns="33" name="ingredients" placeholder="ingredients" className="input-group input-group-sm"/>
+                    <br/>
+                    <legend>Directions</legend>
+                    <textarea rows="5" columns="33" name="directions" placeholder="directions" className="input-group input-group-sm"/>
+                    <button className="btn btn-dark">Create New Recipe</button>
+                </div>
             </Form>
         </div>
     )

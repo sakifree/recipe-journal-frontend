@@ -16,10 +16,6 @@ code {
   font-family: 'Khand', sans-serif;
 }
 
-html {
-  background-color: darkcyan;
-}
-
 .searchBar {
   text-align: center;
 }
@@ -44,20 +40,6 @@ html {
   font-weight: 300px;
 }
 
-.nav {
-  display: flex;
-  justify-content: left;
-  background-color: darkgrey;
-  padding: 10px;
-  font-size: 1.5em;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  margin-right: 25px;
-}
-
-.nav a:hover {
-  color: paleturquoise;
+.show-title {
+  text-align: center;
 }
